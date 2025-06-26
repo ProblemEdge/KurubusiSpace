@@ -14,13 +14,74 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #14142b;
     --foreground: #ededed;
   }
 }
 
+
+@font-face {
+  font-family: 'Title';
+  src: url('/fonts/FGMiraiRen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MainText';
+  src: url('/fonts/LightNovelPOPv2.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'MainText', Arial, Helvetica, sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+.hbg-custom {
+  background-color: #98c3c8;
+  color: #ffffff;
+  font-family: 'Title', Arial, Helvetica, sans-serif;
+}
+
+.bg-custom{
+  background-color: #171717;
+}
+
+.center-text {
+  font-family: 'MainText', Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.mini-title{
+  color: #fdfdfd;
+}
+.text-dis{
+  color: #9c9c9c;
+}
+
+.work-contena{
+  background-color: #1e293b;
+}
+
+.tag{
+  background-color: #B5FCCD;
+  color: #213448;
 }
