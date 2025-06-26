@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const works = [
   {
@@ -178,6 +179,8 @@ export default function Home() {
             <div key={work.id} className="work-contena rounded-lg shadow-md p-4 flex flex-col transition-transform duration-300 hover:scale-105">
               <a href={work.url} target="_blank" rel="noopener noreferrer">
                 <Image
+                  width={400}
+                  height={300}
                   src={work.image}
                   alt={work.title}
                   className="rounded-md w-full h-48 object-contain mb-4 work-contena"
